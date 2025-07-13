@@ -7,11 +7,11 @@ An end‑to‑end Business Intelligence solution that transforms Blinkit’s raw
 ## 🚀 Project Objectives
 
 - **Optimize Data Performance**  
-  Shift heavy data transformations from Power BI to MySQL, reducing file size and improving report refresh speed. :contentReference[oaicite:0]{index=0}  
+  Shift heavy data transformations from Power BI to MySQL, reducing file size and improving report refresh speed.
 - **Unify Disparate Sources**  
-  Join orders, delivery, customer feedback, and marketing tables into a consolidated star schema for holistic analysis. :contentReference[oaicite:1]{index=1}  
+  Join orders, delivery, customer feedback, and marketing tables into a consolidated star schema for holistic analysis.
 - **Enable Dynamic Exploration**  
-  Implement bookmarks, slicers, and DAX measures to empower users to slice data by year, region, product, and more with one click. :contentReference[oaicite:2]{index=2}  
+  Implement bookmarks, slicers, and DAX measures to empower users to slice data by year, region, product, and more with one click.  
 
 ---
 
@@ -20,17 +20,17 @@ An end‑to‑end Business Intelligence solution that transforms Blinkit’s raw
 1. **SQL‑First ETL**  
    - Raw CSVs ingested into MySQL rather than directly into Power BI to avoid slowdowns.  
    - Created a **Master Table** by joining `orders`, `delivery_orders`, `customer_feedback`, `customer`, and related key fields.  
-   - Built optimized **Fact Tables** (`inventory`, `marketing`, `master_table`) and **Dimension Tables** (`configuration`, plus separate measure tables for sales, customer, inventory, marketing). :contentReference[oaicite:3]{index=3}  
+   - Built optimized **Fact Tables** (`inventory`, `marketing`, `master_table`) and **Dimension Tables** (`configuration`, plus separate measure tables for sales, customer, inventory, marketing).
 
 2. **Validation & Optimization**  
    - Tested SQL views in a staging database (`test.db`) to ensure accuracy before Power BI import.  
-   - Selected only necessary fields, streamlining data load and reducing model complexity. :contentReference[oaicite:4]{index=4}  
+   - Selected only necessary fields, streamlining data load and reducing model complexity.
 
 3. **Power BI Data Modeling & DAX**  
    - Imported three MySQL‑backed tables (`mastertable`, `inventorytable`, `marketingtable`).  
    - Maintained a **star schema** with clear relationships for performant querying.  
    - Developed advanced DAX measures (Year, Prev Year, YTD Month, Area) using the SQL‑prepared configuration table.  
-   - Implemented **bookmarks** and **slicer panels** across all pages for seamless, dynamic filtering. :contentReference[oaicite:5]{index=5}  
+   - Implemented **bookmarks** and **slicer panels** across all pages for seamless, dynamic filtering.
 
 ---
 
@@ -72,10 +72,10 @@ An end‑to‑end Business Intelligence solution that transforms Blinkit’s raw
 
 ## 🌟 Key Outcomes & Takeaways
 
-- **Performance Gains**: By offloading transformations to MySQL, report refresh times dropped significantly, ensuring near real‑time insights. :contentReference[oaicite:6]{index=6}  
+- **Performance Gains**: By offloading transformations to MySQL, report refresh times dropped significantly, ensuring near real‑time insights.
 - **Scalable Model**: Star schema design and optimized tables support future data growth and additional data sources.  
 - **User‑First Design**: Bookmarks and slicer panels create an intuitive, “one‑click” exploration experience for analysts and decision‑makers.  
-- **Forecast‑Ready**: Incorporated 2025 forecasted data to help teams anticipate trends and act proactively. :contentReference[oaicite:7]{index=7}  
+- **Forecast‑Ready**: Incorporated 2025 forecasted data to help teams anticipate trends and act proactively.
 
 ---
 
