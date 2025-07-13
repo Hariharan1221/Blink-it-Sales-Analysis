@@ -1,4 +1,4 @@
-# Blink-it-Sales-Analysis
+# Blink-it-Sales-Analysis(Latest-2025)
 
 An end‑to‑end Business Intelligence solution that transforms Blinkit’s raw operational and sales data into strategic insights. Powered by Power BI and MySQL, this interactive dashboard brings clarity to hundreds of thousands of transactions, revealing trends in customer behavior, inventory flows, marketing impact, and more.  
 
